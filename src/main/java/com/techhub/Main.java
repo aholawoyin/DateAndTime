@@ -39,7 +39,8 @@ public class Main {
         //String stringTime = String.format("%4.2f - %5.3f - %6.3f",7.7,8.9,10.0);
         System.out.println(String.format("%s:%s:%s",t1.getHour(),t1.getMinute(),t1.getSecond()));
 
-        LocalDateTime dt1 = LocalDateTime.of(2025,5,15,9,25,41);
+        LocalDateTime dt1 = LocalDateTime.of(2025,5,15,
+                9,25,41);
         System.out.println("Date and Time is :"+ dt1.toString());
 
         Long timeBetween = Duration.between(dt1.toLocalTime(),t1).getSeconds();
